@@ -34,9 +34,9 @@ public class AlertInSelenium {
 		TimeUnit.SECONDS.sleep(2);
 		System.out.println(alert.getText());
 		TimeUnit.SECONDS.sleep(2);
-		alert.accept();//OK
+		//alert.accept();//OK
 		
-		//alert.dismiss();//Cancle
+		alert.dismiss();//Cancle
 		//driver.quit();
 
 	}

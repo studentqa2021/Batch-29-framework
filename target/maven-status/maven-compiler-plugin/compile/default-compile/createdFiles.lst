@@ -1,8 +1,12 @@
+com\generic\CostcoAutomation.class
+com\util\ScreenShot.class
+com\generic\FinalLoginPractice.class
+com\drivermanager\DriverManager.class
+com\selenium\pagefactory\SeleniumPageFactory.class
+com\util\SeleniumWait.class
 com\generic\BaseLogin.class
 com\report\ExtentReportAutomation.class
-com\util\ScreenShot.class
-com\drivermanager\DriverManager.class
+com\generic\WomanProduct.class
 com\util\Constants.class
-com\selenium\pagefactory\SeleniumPageFactory.class
+com\generic\ProductTest.class
 com\util\HighLighter.class
-com\util\SeleniumWait.class

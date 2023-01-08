@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Crome Test">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.testng.interview.practice.ParameterTesting" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Edge Test">
+		<parameter name="Browser" value="Edge"></parameter>
+		<classes>
+			<class name="com.testng.interview.practice.ParameterTesting" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Safari Test">
+		<parameter name="Browser" value="Safari"></parameter>
+		<classes>
+			<class name="com.testng.interview.practice.ParameterTesting" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Firefox Test">
+		<parameter name="Browser" value="Firefox"></parameter>
+		<classes>
+			<class name="com.testng.interview.practice.ParameterTesting" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Opera Test">
+		<parameter name="Browser" value="Opera"></parameter>
+		<classes>
+			<class name="com.testng.interview.practice.ParameterTesting" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

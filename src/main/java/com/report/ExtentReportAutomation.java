@@ -54,7 +54,7 @@ public class ExtentReportAutomation {
 	}
 
 	@AfterMethod
-	public void aftermethod(ITestResult result) throws Exception {
+	public void aftermethod(ITestResult result) throws Exception {//interface ItestLisener (@Lisener)
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.fail(MarkupHelper.createLabel(result.getName() + "Test Failed", ExtentColor.RED));

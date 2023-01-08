@@ -34,8 +34,8 @@ public class DropDownMenu {
 		// Using sleep command so that changes can be noticed
 		Thread.sleep(2000);
 
-		// Step 5: Select option 'Africa' now (Use selectByVisibleText)
-		select.selectByIndex(2);
+		// Step 5: Select option 'Australia' now (Use selectByVisibleText)
+		select.selectByIndex(12);
 
 		Thread.sleep(2000);
 		select.selectByValue("CHINA");

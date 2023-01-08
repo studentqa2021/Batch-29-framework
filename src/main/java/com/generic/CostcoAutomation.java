@@ -2,6 +2,7 @@ package com.generic;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
@@ -64,6 +65,7 @@ public class CostcoAutomation {
 			
 		}
 		//8 >If the deal was there, then mouse over it and read all options
+
 		//mouse hover= Actions class= moveToElement()
 		for(int i=0;i<pf.getCostcoMenuBtn().size();i++) {//1st loop
 			if(pf.getCostcoMenuBtn().get(i).getText().contains("Deals")) {//true
@@ -71,24 +73,25 @@ public class CostcoAutomation {
 				Actions ac = new Actions(driver);
 				ac.moveToElement(pf.getCostcoMenuBtn().get(i)).perform();
 				Thread.sleep(2000);
-				
-				
 				System.out.println("Deal options count = "+pf.getDealOptions().size());
 				//Read name of All deal options==> loop
 				for(int j=0;j<pf.getDealOptions().size();j++) {//2nd loop
 					HighLighter.getColor(driver, pf.getDealOptions().get(j), "green");
 					System.out.println(pf.getDealOptions().get(j).getText());
+					
 				}
 				break;
 			}
 			
 		}
+//		9)	If the computer section was there inside the deal, then click it	
+		for(int i=0;i<pf.getCostcoMenuBtn().size();i++) {//1st loop
+			if(pf.getCostcoMenuBtn().get(i).getText().contains("Deals")) {//true
+				HighLighter.getColor(driver, pf.getCostcoMenuBtn().get(i), "red");
+				pf.getCostcoMenuBtn().get(i).click();
 		
-		
-		
-		
-		
-		
+			}
+		}
 		
 		sf.assertAll();
 	}

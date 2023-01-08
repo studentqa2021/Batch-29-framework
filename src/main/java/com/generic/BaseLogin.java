@@ -20,13 +20,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseLogin {
 	
-	public void getLogin(){
+	public  WebDriver getLogin(){
 		//open a browser
 		WebDriver driver =DriverManager.getBrowser("chrome");
 		driver.manage().window().maximize();
 		SeleniumWait.getImplicitWait(driver, 3);
 		// go to URL
 		driver.navigate().to(Constants.URL);
+	
+		
 		ScreenShot.getScreenShot(driver, "Home Page");
 		//explicit wait=WebDriver wait
 		SeleniumPageFactory pf = new SeleniumPageFactory(driver);
@@ -55,6 +57,8 @@ public class BaseLogin {
 		sa.assertTrue(status);//condition =true or false
 		
 		sa.assertAll();//validation
+		
+		return driver;
 		
 	}
 		
