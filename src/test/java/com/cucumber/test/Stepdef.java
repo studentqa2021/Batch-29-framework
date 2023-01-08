@@ -17,13 +17,6 @@ import cucumber.api.java.en.When;
 public class Stepdef {
 	WebDriver driver;
 	SeleniumPageFactory pf;
-//@Given/@When/@Then = cucumber annotation
-// special character like $^ = regular expression
-	@Given ("open any browser")// cucumber annotation
-	public void setup() {
-		//code
-	}
-	
 
 	@Given("open any browser")
 	public void open_any_browser() {
@@ -76,7 +69,7 @@ public class Stepdef {
 		// Assertion = Hard & soft
 		SoftAssert sa = new SoftAssert();
 		sa.assertTrue(status);// condition =true or false
-
+		driver.quit();
 		sa.assertAll();// validation
 	}
 

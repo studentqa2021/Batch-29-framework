@@ -1,3 +1,4 @@
+com\regression\ConstructorPractice.class
 com\testng\interview\practice\TestPriority.class
 com\testng\automation\framework\TestNGBasedAutomationFrameworkCostco.class
 com\interview\selenium\AlertInSelenium.class
@@ -6,16 +7,22 @@ com\testng\interview\practice\CrossBrowsertesting.class
 com\testng\interview\practice\EnableOrDisableTest.class
 com\regression\SmokeTest.class
 com\interview\selenium\DragAndDrop.class
+com\testng\interview\practice\DataProviderAndFactoryTest2FromAnotherClass.class
 com\testng\interview\practice\TestngAnnotation.class
 com\interview\selenium\DropDownMenu.class
 com\testng\interview\practice\DependsOnAnotherMethods.class
+com\testng\interview\practice\DataProviderTest.class
+com\testng\interview\practice\GroupTest2.class
 com\interview\selenium\SeleniumXpathPractice.class
 com\cucumber\test\CucumberRunner.class
 com\testng\interview\practice\TestNGListeners.class
 com\interview\selenium\WindowHandleInSelenium.class
+com\regression\ExcleTestDataValidationWithSelenium.class
+com\regression\PracticeParameterAnnotationTestNG.class
 com\testng\interview\practice\ExtentReportAutomation.class
 com\testng\interview\practice\DataProviderAndFactory.class
 com\testng\interview\practice\DataProviderFronAnotherClass.class
+com\testng\interview\practice\DataProviderAndFactoryTest.class
 com\testng\interview\practice\GroupTest.class
 com\cucumber\test\Stepdef.class
 com\interview\selenium\MouseHover.class

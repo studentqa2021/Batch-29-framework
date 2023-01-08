@@ -13,10 +13,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		glue={"com.cucumber.test"},
 		
 		//other options
-		monochrome = true,
-		dryRun = false,
-		strict = true,
-		tags = {"@Functional_Test","@SmokeTest"}// 1
+		monochrome = true
+//		dryRun = false,
+//		strict = true,
+//		tags = {"@Functional_Test","@SmokeTest"}// 1
 		
 		)
 public class CucumberRunner extends AbstractTestNGCucumberTests{
