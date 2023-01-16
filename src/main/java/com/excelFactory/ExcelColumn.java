@@ -12,10 +12,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelColumn {
 
-	public static List<String> columnValue(int columnNumber) throws Throwable {
+	public static List<String> columnValue(String path,int columnNumber) throws Throwable {
 		//location/path 
 		
-		String path ="./src/test/resources/Manual test cases.xlsx";
+		
 		//java
 		FileInputStream fs= new FileInputStream(path);// 1st 
 		
@@ -45,7 +45,8 @@ public class ExcelColumn {
 	}
 	
 	public static void main(String[] args) throws Throwable {
-		List<String> excelData =columnValue(0);
+		String path = "./src/test/resources/Login Test data.xlsx";
+		List<String> excelData =columnValue(path,1);
 		System.out.println(excelData);
 	}
 

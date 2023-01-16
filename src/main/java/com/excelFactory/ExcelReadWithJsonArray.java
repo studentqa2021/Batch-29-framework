@@ -86,9 +86,9 @@ public class ExcelReadWithJsonArray {
 	}
 
 	public static void main(String[] args) throws Throwable {
-		String path = "./TestData/ConfigData.xlsx";
+		String path = "./src/test/resources/Login Test data.xlsx";
 
-		System.out.println(ExcelReadWithJsonArray.ExcelManager(path, "Orbis", "Value"));
+		System.out.println(ExcelReadWithJsonArray.ExcelManager(path, "Login", "USER_NAME"));
 	}
 
 }

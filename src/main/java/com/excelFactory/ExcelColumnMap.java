@@ -40,11 +40,11 @@ public class ExcelColumnMap {
 	
 	public static void main(String[] args) throws Throwable {
 		
-		String path ="./TestData/ConfigData.xlsx";
+		String path = "./src/test/resources/Login Test data.xlsx";
 
-		System.out.println(ExcelColumnMap.columnValueMap(path,"URL"));
-		System.out.println(ExcelColumnMap.columnValueMap(path,"USER"));
-		System.out.println(ExcelColumnMap.columnValueMap(path,"PASS"));
+		System.out.println(ExcelColumnMap.columnValueMap(path,"USER_NAME"));
+		System.out.println(ExcelColumnMap.columnValueMap(path,"PASSWORD"));
+		System.out.println(ExcelColumnMap.columnValueMap(path,"STATUS"));
 
 	
 	}
